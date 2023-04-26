@@ -34,6 +34,15 @@ def main(pe_name:str = ""):
         print()
 
 
+
+def read_text_section (parsed_binary: lief.PE.Binary = None) -> None:
+    # Add important attributes here
+    pass
+
+
+
+
+
 def read_pe_information (parsed_binary: lief.PE.Binary = None) -> None:
     print ()
     # Executable file name
@@ -184,10 +193,6 @@ def read_library_imports (parsed_binary: lief.PE.Binary = None) -> None:
             if not f.is_ordinal:
                 print ("    " + f.name)
                 
-
-def read_text_section (parsed_binary: lief.PE.Binary = None) -> None:
-    # Add important attributes here
-    pass
 
 
 
